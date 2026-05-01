@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.3rem solid white;
+  border-radius: 1rem;
+  box-shadow: 0rem 1rem 0.8rem rgba(0, 0, 0, 0.409);
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  background: rgb(210, 16, 116);
+  font-weight: bold;
+  color:white;
+  box-shadow: 0rem 1rem 0.8rem rgba(0, 0, 0, 0.394) inset;
+  text-shadow: 0rem .5rem .3rem rgb(99, 99, 99),0rem .6rem .3rem rgb(97, 97, 97),0rem .8rem .3rem rgb(71, 71, 71),0rem 1rem .3rem rgb(20, 20, 20),0rem 1.2rem .3rem rgb(0, 0, 0);
+  user-select: none;
+}
+.display {
+  width: 100%;
+  height: 47rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+video {
+  width: 100%;
+}
+.footer {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(231, 81, 31);
+  padding:2rem;
+  box-shadow: 0rem -1rem 0.8rem rgba(0, 0, 0, 0.394) inset;
+}
+label {
+  width: 10rem;
+  height: 4rem;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  line-height: 5rem;
+}
+.btn {
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.8rem 0.5rem rgba(0, 0, 0, 0.127);
+  background:white;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn:nth-child(1) {
+  position: relative;
+}
+.btn:nth-child(1) input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+.btn:active,.btn:nth-child(1) input:active {
+  cursor: grabbing;
+}
